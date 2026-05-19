@@ -1,0 +1,15 @@
+# Task 3: Considerations in High Dimensions
+
+This document explores the common problems that may arise when in high-dimensional datasets, in which the number of features is larger than the number of observations. Here we will also use generative AI, specifically Claude, to aid in our understanding of challenges in fitting regression models and interpreting results on high-dimensional data.
+
+# Concept to Clarify
+A concept I wanted to clarify is the extremity of multicollinearity in high-dimensional datasets and the idea that we can never know exactly which variables (if any) truly are predictive of the outcome, and we can never identify the best coefficients for use in the regression. And how this affects the interpretability of the model and the reliability of predictions.
+
+# Prompt
+I am an environmental data science masters student who knows is taking a machine learning for environmental science course where I am reading a section about Considerations in High Dimensions: Interpreting Results in High Dimensions. This section discusses multicollinearity being extreme in a high dimensional setting and also mentions the idea that we can never know exactly which variables (if any) truly are predictive of the outcome, and we can never identify the best coefficients for use in the regression. And how this affects the interpretability of the model and the reliability of predictions. would you be able to explain how this may affect our interpretability of the model or how we deal with this. It would be helpful to have a simple environmental-related problem.
+
+# Generative AI Response
+I used Claude to generate a response that clarifies the concept I was struggling with. By asking for an environmental-related example I was given wildfire example which helped illustrate the concept better. It provided realistic example of multicollinearity between features, such as temperature and humidity, explaining that because they are inversely related the model can't separate their independent effects. It also explained that in a high-dimensional setting, the model may select a random feature, such as soil pH as an important predictor, even if it has no real relationship with wildfire occurrence, due to the large number of features. Claude made a similar statement to the textbook when addressing my concern about how we deal with this issue, by stating that Lasso and Ridge regularization techniques can help identify predictors in high-dimensional settings, but it is based on the data it is given. Which reflects the point made in the textbook "But we must be careful not to overstate the results obtained, and to make it clear that what we have identified is simply one of many possible models". Given the wildfire example provided by Claude I feel like I have a better understanding of the concept of multicollinearity and the challenges of interpreting results in high-dimensional settings.
+
+
+
